@@ -5,9 +5,8 @@
   padding: 0;
 }
 body {
-  background-color: #000;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23e8f5e9' fill-opacity='0.03' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
-
+  background-color: rgb(1,4,1);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%2392ac96' fill-opacity='0.06' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
   font-size: 1.4rem;
 }
 ul {
@@ -29,6 +28,7 @@ body .container {
 /*                                 NAV STYLES                                 */
 /* -------------------------------------------------------------------------- */
 .nav-main {
+  background-color: rgba(25, 117, 68, 0.5);
   font-size: 1.6rem;
   /* nos permite organizar los elementos */
   display: flex;
@@ -36,8 +36,8 @@ body .container {
   justify-content: space-between;
   align-items: center;
   height: 5rem;
-  padding: 50px 20px;
-  border: 0.15rem solid #2dc874;
+  padding: 3rem 2rem;
+  border: 0.1rem solid #2dc874;
   border-radius: 5px;
 }
 .nav-logo {
@@ -54,8 +54,9 @@ body .container {
   padding: 0.9rem;
 }
 .nav-menu li a {
+  border-radius: 8px;
   color: #eee;
-  padding: 0.2rem;
+  /* padding: 0.2rem; */
 }
 .nav-menu li a:hover {
   background-color: #eee;
@@ -63,7 +64,7 @@ body .container {
 }
 
 .nav-menu {
-  flex: 1;
+  /* flex: 1; */
   margin-left: 3rem;
 }
 .nav-menu-rigth li a:hover {
@@ -81,17 +82,17 @@ body .container {
 /* -------------------------------------------------------------------------- */
 /* Slideshow container */
 .slideshow-container {
-    border-radius: 8px;
-  width: 90%;
+  border-radius: 8px;
+  width: 100%;
   height: 30rem;
   overflow: hidden;
   position: relative;
-  margin:auto;
-  margin-top:3rem;
+  margin: auto;
+  margin-top: 3rem;
 }
-.responsive{
-    width: 100%;
-    height: auto;
+.responsive {
+  width: 100%;
+  height: auto;
 }
 
 /* Caption text */
@@ -158,13 +159,111 @@ body .container {
 /* -------------------------------------------------------------------------- */
 /*                                    CARDS                                   */
 /* -------------------------------------------------------------------------- */
-.news-cards{
-  margin:auto;
+.news-cards {
+  margin: auto;
 }
-body .container .news-cards .mycard{
+body .container .news-cards .mycard {
   margin-top: 3rem;
-  padding:2rem;
+  padding: 2rem;
 }
-body .container .news-cards .mycard .card-content{
-  bottom :-5rem;
+body .container .news-cards .mycard .card-reveal .reveal {
+  /* padding:1.04rem; */
+}
+body .container .news-cards .mycard .card-image {
+  width: 100%;
+  height: 9rem;
+}
+.laravel {
+  color: #db5537;
+}
+.rails {
+  color: #cc0000;
+}
+.django {
+  color: #103e2e;
+}
+.node {
+  color: #64b647;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               BANNER ONE SECTION                               */
+/* -------------------------------------------------------------------------- */
+.banner-section {
+  width: 100%;
+  height: 24rem;
+  overflow: hidden;
+  background-image: url("https://www.paragyte.com/img/React_Banner.png");
+  margin-bottom: 2.5rem;
+  background-size: 100%;
+  border-radius: 8px;
+}
+.banner-section .content {
+  width: 40%;
+  padding: 3rem 4rem;
+  color: #fff;
+  text-align: justify;
+}
+.banner-section .content h2 {
+  margin-top: 0;
+  color: #61dbfb;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               BANNER ONE SECTION                               */
+/* -------------------------------------------------------------------------- */
+.banner-section-2 {
+  width: 100%;
+  height: 24rem;
+  overflow: hidden;
+  background-image: url("https://miro.medium.com/max/2880/1*UbVWCOuRgGWzUpyD6VFhvQ.png");
+  margin-bottom: 2.5rem;
+  background-size: 100%;
+  border-radius: 8px;
+}
+.banner-section-2 .content {
+  width: 40%;
+  padding: 3rem 4rem;
+  color: #fff;
+  text-align: justify;
+}
+.banner-section-2 .content h2 {
+  margin-top: 0;
+  color: #d50000;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   SOCIAL                                   */
+/* -------------------------------------------------------------------------- */
+.social {
+  text-align: center;
+  margin: 6rem;
+}
+.social-links {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-links a {
+  margin: 0 30px;
+}
+.social-links i {
+  font-size:3rem;
+}
+.social-links i:hover {
+  color:#fff;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOOTER                                  */
+/* -------------------------------------------------------------------------- */
+body .myfooter{
+  padding-top:20px;
+  /* background-color:rgba(12, 122, 21, 0.562); */
+  background-color:rgba(117,117,117,0.5);
+  color: #64b647;
+}
+body .myfooter h5{
+  color: #64b647;
 }
