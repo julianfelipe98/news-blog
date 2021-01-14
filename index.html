@@ -1,30 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- ----------------------------------------------------------------------- -->
-<!--                              FONT AWESOME                               -->
-<!-- ----------------------------------------------------------------------- -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                              FONT AWESOME                               -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                              CUSTOM STYLES                              -->
+    <link rel="stylesheet" href="styles.css" class="css" />
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               MATERIALIZE                               -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
     <title>Home</title>
-</head>
-<body>
-    <div class="container"></div>
-    <nav class="nav-main">
-        <img src="img/logo.png" alt="news-logo" srcset="">
+  </head>
+  <body>
+    <div class="container">
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                               NAVEGATION                                -->
+      <nav class="nav-main transparent">
+        <img src="img/logo.png" alt="nature-logo" srcset="" class="nav-logo" />
         <ul class="nav-menu">
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">NodeJS</a></li>
-            <li><a href="#">React</a></li>
-            <li><a href="#">AWS</a></li>
-            <li><a href="#">Firebase</a></li>
-            <li><a href="#">Python</a></li>
-            <li><a href="#">Java</a></li>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">NodeJS</a></li>
+          <li><a href="#">Laravel</a></li>
+          <li><a href="#">Ruby on Rails</a></li>
+          <li><a href="#">Golang</a></li>
+          <li><a href="#">Django</a></li>
+          <li><a href="#">More</a></li>
         </ul>
-        <ul class ="nav-menu-rigth">
-            <li><a href="#"><i class="fas fa-search"></i></a></li>
+        <ul class="nav-menu-rigth">
+          <li>
+            <a href="#"><i class="fas fa-search search fa-lg"></i></a>
+          </li>
         </ul>
-    </nav>
-</body>
+      </nav>
+
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                                 SLIDER                                  -->
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img
+            src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            class="responsive"
+          />
+          <div class="text">
+            <h4>Seguridad de la informacion</h4>
+            <p>implementacion con nodeJS</p>
+            <a href="" class=""
+              >Read More <i class="fas fa-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            class="responsive"
+          />
+          <div class="text">
+            <h4 class="">Programacion como estilo de vida</h4>
+            <p>implementacion con nodeJS</p>
+            <a href="" class=""
+              >Read More <i class="fas fa-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            src="https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            class="responsive"
+          />
+          <div class="text">
+            <h4>El nuevo kernel de linux</h4>
+            <p>implementacion con nodeJS</p>
+            <a href="" class=""
+              >Read More <i class="fas fa-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                               CARDS NEWS                                -->
+      <div class="news-cards row">
+        <div class="mycard card col s3 transparent">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img
+              class="activator"
+              src="https://makeawebsitehub.com/wp-content/uploads/2016/01/nodejs-logo.png"
+            />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator blue-text">NodeJS</span>
+            <p><a href="#">About</a></p>
+          </div>
+          <div class="card-reveal green ">
+            <span class="card-title"
+              >Card Title<i class="fas fa-times right"></i
+            ></span>
+            <p>
+              Here is some more information about this product that is only
+              revealed once clicked on.
+            </p>
+          </div>
+        </div>
+        <div class="mycard card col s3 transparent">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img
+              class="activator"
+              src="https://anthoncode.com/wp-content/uploads/2019/01/laravel-logo-png.png"
+            />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator blue-text">Laravel</span>
+            <p><a href="#">About</a></p>
+          </div>
+          <div class="card-reveal green ">
+            <span class="card-title"
+              >Card Title<i class="fas fa-times right"></i
+            ></span>
+            <p>
+              Here is some more information about this product that is only
+              revealed once clicked on.
+            </p>
+          </div>
+        </div>
+        <div class="mycard card col s3 transparent">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img
+              class="activator"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/1200px-Ruby_On_Rails_Logo.svg.png"
+            />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator blue-text">Ruby on Rail</span>
+            <p><a href="#">About</a></p>
+          </div>
+          <div class="card-reveal green ">
+            <span class="card-title"
+              >Card Title<i class="fas fa-times right"></i
+            ></span>
+            <p>
+              Here is some more information about this product that is only
+              revealed once clicked on.
+            </p>
+          </div>
+        </div>
+        <div class="mycard card col s3 transparent">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img
+              class="activator"
+              src="https://static.djangoproject.com/img/logos/django-logo-negative.png"
+            />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator blue-text">Django</span>
+            <p><a href="#">About</a></p>
+          </div>
+          <div class="card-reveal green ">
+            <span class="card-title"
+              >Card Title<i class="fas fa-times right"></i
+            ></span>
+            <p>
+              Here is some more information about this product that is only
+              revealed once clicked on.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               MATERIALIZE SCRIPTS                               -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+    <script src="slider.js"></script>
+  </body>
 </html>
